@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport id=viewport><link rel=icon href=/favicon.ico><title>okbix</title><script>var adaptiveRem = function () {
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var width = docEl.getBoundingClientRect().width;
+                    width = width || 500
+                    if (width <= 768) {
+                        var rem = width * 100 / 750;
+                        docEl.style.fontSize = rem + 'px';
+                    } else {
+                        docEl.style.fontSize = '100%'
+                    }
+                };
+            recalc();
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        }
+
+        adaptiveRem()
+        window.onload = function () {
+            document.getElementsByTagName('body')[0].style.visibility = "visible"
+        }</script><link href=/css/app.f810e7b7.css rel=preload as=style><link href=/css/chunk-vendors.fe59743f.css rel=preload as=style><link href=/js/app.04d55015.js rel=preload as=script><link href=/js/chunk-vendors.c2b4e5b7.js rel=preload as=script><link href=/css/chunk-vendors.fe59743f.css rel=stylesheet><link href=/css/app.f810e7b7.css rel=stylesheet></head><body><noscript><strong>We're sorry but demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=http://pv.sohu.com/cityjson/getip.aspx charset=utf-8></script><script src=/js/chunk-vendors.c2b4e5b7.js></script><script src=/js/app.04d55015.js></script></body></html>
